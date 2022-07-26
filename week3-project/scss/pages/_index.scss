@@ -149,18 +149,18 @@
 }
 
 .co-branding {
-  background-image: url("../../images/index-bg.png");
+  background-image: url("./images/index-bg.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 
   @include ipad {
-    background-image: url("../../images/index-bg-sm.png");
+    background-image: url("./images/index-bg-sm.png");
     background-position: center top;
   }
 
   @include phone {
-    background-image: url("../../images/index-bg-md.png");
+    background-image: url("./images/index-bg-md.png");
   }
 
   .co-branding-list {
@@ -180,18 +180,18 @@
     }
 
     .brand-f {
-      background-image: url("../../images/home-section4-1.png");
+      background-image: url("./images/home-section4-1.png");
 
       @include phone {
-        background-image: url("../../images/home-section4-1-sm.png");
+        background-image: url("./images/home-section4-1-sm.png");
       }
     }
 
     .brand-s {
-      background-image: url("../../images/home-section4-2.png");
+      background-image: url("./images/home-section4-2.png");
 
       @include phone {
-        background-image: url("../../images/home-section4-2-sm.png");
+        background-image: url("./images/home-section4-2-sm.png");
       }
     }
   }
