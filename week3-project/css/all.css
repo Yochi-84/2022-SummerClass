@@ -634,20 +634,20 @@ a {
 }
 
 .co-branding {
-  background-image: url("./images/index-bg.png");
+  background-image: url("../images/index-bg.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 992px) {
   .co-branding {
-    background-image: url("./images/index-bg-sm.png");
+    background-image: url("../images/index-bg-sm.png");
     background-position: center top;
   }
 }
 @media screen and (max-width: 575px) {
   .co-branding {
-    background-image: url("./images/index-bg-md.png");
+    background-image: url("../images/index-bg-md.png");
   }
 }
 .co-branding .co-branding-list {

@@ -149,18 +149,18 @@
 }
 
 .co-branding {
-  background-image: url("./images/index-bg.png");
+  background-image: url("../images/index-bg.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 
   @include ipad {
-    background-image: url("./images/index-bg-sm.png");
+    background-image: url("../images/index-bg-sm.png");
     background-position: center top;
   }
 
   @include phone {
-    background-image: url("./images/index-bg-md.png");
+    background-image: url("../images/index-bg-md.png");
   }
 
   .co-branding-list {
