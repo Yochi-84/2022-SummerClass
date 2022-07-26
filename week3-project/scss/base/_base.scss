@@ -1,0 +1,17 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", serif;
+  line-height: 1.5;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}

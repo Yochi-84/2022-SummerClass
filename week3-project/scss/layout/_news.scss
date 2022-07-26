@@ -1,0 +1,117 @@
+.news {
+  display: flex;
+  gap: 24px;
+  position: relative;
+
+  @include phone {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &-img {
+    width: calc(50% - 12px);
+
+    @include phone {
+      width: 100%;
+
+
+      a::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: calc(50% - 12px);
+
+    @include phone {
+      width: 100%;
+      align-items: initial;
+    }
+  }
+
+  &-title {
+    font-size: 32px;
+    color: $secondary;
+
+    @include ipad {
+      font-size: 24px;
+    }
+  }
+
+  &-text-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  &-sub-title {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Roboto", serif;
+
+    @include ipad {
+      font-size: 16px;
+    }
+  }
+
+  &-date {
+    @extend .news-sub-title;
+    color: rgba(0,0,0,0.7);
+  }
+
+  &-content {
+    font-size: 20px;
+    color: $content-black;
+
+    @include ipad {
+      font-size: 16px;
+    }
+
+    @include phone {
+      display: none;
+    }
+  }
+
+  &-more {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 900;
+    color: $secondary;
+
+    @include ipad {
+      color: $content-black;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: none;
+      display: none;
+    }
+
+    &.after-text {
+      display: none;
+
+      @include ipad {
+        display: inline;
+      }
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}

@@ -1,0 +1,240 @@
+.sub-nav {
+  background-color: $secondary;
+
+  @include phone {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-list {
+    display: flex;
+    gap: 48px;
+
+    li {
+      padding: 13px 0;
+
+      &:hover a::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+
+    a {
+      font-size: 20px;
+      color: #fff;
+      position: relative;
+
+      @include pad {
+        font-size: 16px;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-color: #fff;
+        height: 1px;
+        left: 50%;
+        bottom: -2px;
+        width: 0;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  span {
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+
+    @include pad {
+      font-size: 34px;
+    }
+  }
+
+}
+
+.blog-list {
+  margin-bottom: 124px;
+
+  > :not(:last-child) {
+    margin-bottom: 60px;
+
+    @include ipad {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.blog{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &-article {
+    width: calc(100% / 3 * 2 - 12px);
+
+    @include phone {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 48px;
+
+      @include phone {
+        font-size: 24px;
+      }
+    }
+
+    h2 {
+      font-size: 24px;
+      font-family: "Roboto", serif;
+      margin-bottom: 16px;
+
+      @include phone {
+        font-size: 16px;
+      }
+    }
+
+    p {
+      color: $content-black;
+      margin-bottom: 40px;
+
+      @include ipad {
+        margin-bottom: 24px;
+      }
+
+      @include phone {
+        margin-bottom: 16px;
+      }
+    }
+
+    > img {
+      width: 100%;
+      margin-bottom: 8px;
+
+      @include ipad {
+        margin-bottom: 16px;
+      }
+
+      @include phone {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &-sidebar {
+    width: calc(100% / 3 - 12px);
+
+    @include phone {
+      display: none;
+    }
+
+    h3 {
+      display: flex;
+      align-items: center;
+      font-size: 32px;
+      font-weight: 700;
+      font-family: "Roboto", serif;
+      text-transform: uppercase;
+      color: $primary;
+
+      @include ipad {
+        font-size: 16px;
+      }
+
+      span {
+        font-size: 48px;
+        margin-right: 12px;
+
+        @include ipad {
+          font-size: 24px;
+          margin-right: 2px;
+        }
+      }
+    }
+
+    .tags-list {
+      width: 65%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 24px;
+
+      @include ipad {
+        width: 100%;
+      }
+
+      a {
+        font-family: "Roboto", serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: $primary;
+
+        @include ipad {
+          font-size: 16px;
+        }
+
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+  }
+
+  &-pagination {
+    width: calc(100% / 3 * 2 - 12px);
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #707070;
+    padding-top: 24px;
+
+    @include ipad {
+      width: 100%;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      color: #000;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+
+  @include phone {
+    display: none;
+  }
+
+  h5 {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    margin-right: 16px;
+  }
+
+  &-social {
+    display: flex;
+    gap: 16px;
+
+    img {
+      width: 24px;
+      height: 24px;
+      transition: 0.3s;
+
+      &:hover {
+        filter: invert(0.7) sepia(1.5) hue-rotate(300deg) saturate(1.2) brightness(0.7);
+      }
+    }
+  }
+}

@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+body {
+  font-family: 'Noto Sans TC',serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.owner-name {
+  font-size: 80px;
+  line-height: 95px;
+  padding-top: 40px;
+  border-bottom: 2px solid #000;
+  margin-bottom: 48px;
+  padding: 40px 0 22px;
+}
+
+.owner-pic {
+  border-radius: 50%;
+  width: 324px;
+  height: 324px;
+  margin-bottom: 48px;
+}
+
+.sub-title {
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 7px;
+  margin-bottom: 16px;
+}
+
+.sub-title :first-child {
+  font-size: 32px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.sub-title :last-child {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #A00404;
+  margin-left: 16px;
+  vertical-align: middle;
+}
+
+.profile p {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.profile > p:first-of-type {
+  margin-bottom: 24px;
+}
+
+.profile > p:last-of-type,
+.education li:last-of-type {
+  margin-bottom: 64px;
+}
+
+.education li {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.education li:first-of-type {
+  margin-bottom: 16px;
+}
+
+.bg-fluid {
+  background-color: #415165;
+  padding: 24px 0 40px;
+  margin-bottom: 64px;
+}
+
+.skill {
+  max-width: 996px;
+  margin: 0 auto;
+}
+
+.skill .sub-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.skill .sub-title span {
+  color: #fff;
+}
+
+.skill ul {
+  max-width: 248px;
+  margin: 0 auto;
+  padding-left: 23px;
+  border-left: 1px solid #96A9C4;
+}
+
+.skill li {
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.skill li:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
+.experience ul {
+  margin-left: 24px;
+  padding-left: 23px;
+  border-left: 1px solid #96a9c4;
+}
+
+.experience li {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.experience li:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+
+.experience li:last-of-type {
+  margin-bottom: 80px;
+}
+
+.experience li img {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+.experience li p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.footer {
+  margin-bottom: 0;
+}
+
+.footer .sub-title {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.footer .sub-title span {
+  color: #fff;
+}
+
+.footer li {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.footer li:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.footer li a {
+  color: #fff;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.footer li a:hover {
+  color: #96A9C4
+}
+
+.footer li:last-of-type {
+  font-size: 0;
+}
+
+.footer li img {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+
+.footer li img:hover {
+  filter: drop-shadow(3px 2px 3px black);
+}
+

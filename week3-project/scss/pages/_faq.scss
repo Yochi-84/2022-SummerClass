@@ -1,0 +1,22 @@
+.faq {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+
+  &-list {
+
+    > :not(:last-child) {
+      margin-bottom: 32px;
+
+      @include phone {
+        margin-bottom: 24px;
+      }
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+  }
+}

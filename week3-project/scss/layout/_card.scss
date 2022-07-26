@@ -1,0 +1,42 @@
+.card {
+  &-img {
+    img {
+      width: 100%;
+    }
+  }
+
+  &-title {
+    font-size: 24px;
+    padding: 8px 24px;
+    box-shadow: 0 0 0 1px $lighten-gray;
+  }
+
+  &-info {
+    padding: 16px 27px;
+    box-shadow: 0 0 0 1px $lighten-gray;
+
+    > :not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &-article {
+    font-size: 20px;
+    display: flex;
+    column-gap: 11px;
+  }
+
+  &-btn {
+    display: block;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 19px;
+    line-height: 27px;
+    background-color: #000;
+    color: #fff;
+
+    &:hover {
+      background-color: $secondary;
+    }
+  }
+}

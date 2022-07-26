@@ -1,0 +1,87 @@
+.header{
+  background-color: $primary;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      width: 80px;
+      height: 48.75px;
+    }
+
+
+    .hamburger-menu-icon {
+      display: none;
+      font-size: 30px;
+      color: #fff;
+      cursor: pointer;
+      user-select: none;
+
+      @include phone {
+        display: block;
+        padding: 25px 0;
+      }
+    }
+
+    &-list {
+      display: flex;
+      column-gap: 64px;
+
+      @include pad {
+        gap: 32px;
+      }
+
+      @include phone {
+        display: none;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translateY(100%);
+        width: 100%;
+        background-color: $darken-gray;
+        transition: 0.3s;
+
+
+        li + li {
+          border-top: 1px solid #fff;
+        }
+
+        &.is-show {
+          display: block;
+        }
+      }
+
+      li {
+        padding: 25px 0;
+        transition: 0.3s;
+
+        &:not(.is-active) a:hover{
+          transform: translateY(-20%);
+        }
+
+        &.is-active a {
+          font-weight: 700;
+          padding-bottom: 2px;
+          border-bottom: 2px solid currentColor;
+
+          @include phone {
+            border-bottom: 0;
+          }
+        }
+      }
+
+      a {
+        display: block;
+        color: #fff;
+        font-size: 20px;
+      }
+    }
+  }
+}

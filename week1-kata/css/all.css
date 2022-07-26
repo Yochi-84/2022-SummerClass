@@ -1,0 +1,45 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
+img{
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.news-box {
+  display: flex;
+  margin-bottom: 24px;
+  gap: 20px;
+}
+
+.news-list >:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.news {
+  display: flex;
+  gap: 20px;
+}
+
+.news-content h2 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.news-content p {
+  line-height: 1.5;
+}
+
+.footer {
+  padding: 48px 0;
+}
+
+.footer p {
+  line-height: 1.5;
+  text-align: center;
+}
