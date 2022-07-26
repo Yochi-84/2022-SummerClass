@@ -180,18 +180,18 @@
     }
 
     .brand-f {
-      background-image: url("./images/home-section4-1.png");
+      background-image: url("../images/home-section4-1.png");
 
       @include phone {
-        background-image: url("./images/home-section4-1-sm.png");
+        background-image: url("../images/home-section4-1-sm.png");
       }
     }
 
     .brand-s {
-      background-image: url("./images/home-section4-2.png");
+      background-image: url("../images/home-section4-2.png");
 
       @include phone {
-        background-image: url("./images/home-section4-2-sm.png");
+        background-image: url("../images/home-section4-2-sm.png");
       }
     }
   }
