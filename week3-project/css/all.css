@@ -634,20 +634,20 @@ a {
 }
 
 .co-branding {
-  background-image: url("../../images/index-bg.png");
+  background-image: url("./images/index-bg.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 992px) {
   .co-branding {
-    background-image: url("../../images/index-bg-sm.png");
+    background-image: url("./images/index-bg-sm.png");
     background-position: center top;
   }
 }
 @media screen and (max-width: 575px) {
   .co-branding {
-    background-image: url("../../images/index-bg-md.png");
+    background-image: url("./images/index-bg-md.png");
   }
 }
 .co-branding .co-branding-list {
@@ -667,19 +667,19 @@ a {
   height: 240px;
 }
 .co-branding .co-branding-list .brand-f {
-  background-image: url("../../images/home-section4-1.png");
+  background-image: url("./images/home-section4-1.png");
 }
 @media screen and (max-width: 575px) {
   .co-branding .co-branding-list .brand-f {
-    background-image: url("../../images/home-section4-1-sm.png");
+    background-image: url("./images/home-section4-1-sm.png");
   }
 }
 .co-branding .co-branding-list .brand-s {
-  background-image: url("../../images/home-section4-2.png");
+  background-image: url("./images/home-section4-2.png");
 }
 @media screen and (max-width: 575px) {
   .co-branding .co-branding-list .brand-s {
-    background-image: url("../../images/home-section4-2-sm.png");
+    background-image: url("./images/home-section4-2-sm.png");
   }
 }
 .co-branding li {
