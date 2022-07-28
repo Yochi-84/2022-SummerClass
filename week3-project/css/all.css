@@ -780,6 +780,7 @@ a {
   margin-bottom: 16px;
   border: 1px solid #000;
   padding: 6px 12px;
+  background-color: #FBF2F2;
 }
 .contact form input[type=checkbox] {
   margin-right: 4px;
