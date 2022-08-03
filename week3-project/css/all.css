@@ -578,8 +578,7 @@ a {
 .feature-list p {
   font-size: 16px;
   color: #000;
-  -moz-text-align-last: left;
-       text-align-last: left;
+  text-align: justify;
 }
 
 @media screen and (max-width: 992px) {
