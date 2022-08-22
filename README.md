@@ -8,3 +8,6 @@
 ---
 ### Week3 - 眼鏡形象網站
 > Demo: [https://yochi-84.github.io/2022-SummerClass/week3-project](https://yochi-84.github.io/2022-SummerClass/week3-project)
+---
+### Week7 - 視差滾動
+> Demo: [https://yochi-84.github.io/2022-SummerClass/week7-project](https://yochi-84.github.io/2022-SummerClass/week7-project)
